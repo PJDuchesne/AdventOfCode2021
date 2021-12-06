@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61e5782b-c289-4bcd-9336-4e36ae075bb4" name="Default Changelist" comment="" />
+    <list default="true" id="61e5782b-c289-4bcd-9336-4e36ae075bb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +44,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin script.Day3.kts">
+  <component name="RunManager" selected="Kotlin script.Day4.kts">
     <configuration name="Day1.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <option name="filePath" value="$PROJECT_DIR$/Day1.kts" />
@@ -63,8 +65,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day4.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Day4.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.Day4.kts" />
         <item itemvalue="Kotlin script.Day3.kts" />
         <item itemvalue="Kotlin script.Day2.kts" />
         <item itemvalue="Kotlin script.Day1.kts" />
