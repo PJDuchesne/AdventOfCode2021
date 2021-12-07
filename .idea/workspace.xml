@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="61e5782b-c289-4bcd-9336-4e36ae075bb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Day6.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +30,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,21 +47,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin script.Day5.kts">
-    <configuration name="Day1.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <option name="filePath" value="$PROJECT_DIR$/Day1.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day2.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <option name="filePath" value="$PROJECT_DIR$/Day2.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin script.Day6WithJankyBenchmarkingCode.kts">
     <configuration name="Day3.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Day3.kts" />
       <method v="2">
@@ -77,13 +66,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day6WithJankyBenchmarkingCode.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Day6WithJankyBenchmarkingCode.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day6.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Day6.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.Day6WithJankyBenchmarkingCode.kts" />
+        <item itemvalue="Kotlin script.Day6.kts" />
         <item itemvalue="Kotlin script.Day5.kts" />
         <item itemvalue="Kotlin script.Day4.kts" />
         <item itemvalue="Kotlin script.Day3.kts" />
-        <item itemvalue="Kotlin script.Day2.kts" />
-        <item itemvalue="Kotlin script.Day1.kts" />
       </list>
     </recent_temporary>
   </component>
