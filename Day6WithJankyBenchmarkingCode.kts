@@ -24,10 +24,8 @@ main()
 
 println("\ngoodbye\n")
 
-// 207.1us with 64
 @OptIn(kotlin.time.ExperimentalTime::class)
 fun main() {
-//  println("Part One Answer: ${partOne()}") // 353079
   val numberOfIterations = 10000
 
   val stepSizesToTry = listOf(1,2,4,8,16,32,64)
@@ -55,30 +53,7 @@ fun main() {
     println("Finished with stepSize $stepSize, averaging $duration per run")
   }
 
-//  println("Part Two Answer: ${partTwo()} in with an average of >>$operationTime<< milliseconds per op") // 1605400130036
-}
-
-// Purely naive (Does not scale to part 2 size)
-fun partOne(): Int {
-  val fishes = getInitialState()
-    .toMutableList()
-
-  repeat(80) {
-    val numberOfFish = fishes.size
-    for (idx in (0..numberOfFish - 1)) {
-      when (fishes[idx]) {
-        0 -> {
-          fishes[idx] = OLD_FISH_AGE
-          fishes.add(NEW_FISH_AGE)
-        }
-        else -> {
-          fishes[idx] -= 1
-        }
-      }
-    }
-  }
-
-  return fishes.size
+  println("Part Two Answer: ${partTwo(64)}") // 1605400130036
 }
 
 // Two parts:
@@ -87,7 +62,7 @@ fun partOne(): Int {
 //    and calculating a new sum
 fun partTwo(stepSize: Int): Long {
   // This maps what a singular fish would look like after STEP_SIZE days
-  val batchResultFishByAge = (0..8).associate { originalAge ->
+  val batchResultFishByAge = (0..8).map { originalAge ->
     val batchOfFishes = mutableListOf(originalAge)
 
     repeat(stepSize) {
@@ -105,7 +80,7 @@ fun partTwo(stepSize: Int): Long {
       }
     }
 
-    originalAge to sumByAge(batchOfFishes.toList())
+    sumByAge(batchOfFishes.toList())
   }
 
   // Iterate through
@@ -115,24 +90,28 @@ fun partTwo(stepSize: Int): Long {
   // Running total of current fish by age, initialized to the original state
   var numByAge = sumByAge(getInitialState())
 
-  repeat(numSteps) {
-    val newNumByAge = (0..NEW_FISH_AGE)
-      .associate { it to 0.toLong() }
-      .toMutableMap()
+  val emptyArray = Array<Long>(NEW_FISH_AGE + 1) { 0L }
 
-    for ((idx, oldNum) in numByAge) {
-      val batchResultForThisAge = batchResultFishByAge.get(idx)!!
+  var arrayOfAgedFish = (0..NEW_FISH_AGE).map { age ->
+    numByAge.getOrElse(age) { 0L }
+  }.toTypedArray()
+
+  repeat(numSteps) {
+    val newNumByAge = emptyArray.copyOf()
+
+    for ((idx, oldNum) in arrayOfAgedFish.withIndex()) {
+      val batchResultForThisAge = batchResultFishByAge[idx]
 
       for ((age, newNum) in batchResultForThisAge) {
-        val newCount = newNumByAge[age]!! + oldNum * newNum
-        newNumByAge.put(age, newCount)
+        val newCount = newNumByAge[age] + oldNum * newNum
+        newNumByAge[age] = newCount
       }
     }
 
-    numByAge = newNumByAge
+    arrayOfAgedFish = newNumByAge
   }
 
-  return numByAge.values.sumOf { it }
+  return arrayOfAgedFish.sumOf { it }
 }
 
 fun getInitialState(): List<Int> {
