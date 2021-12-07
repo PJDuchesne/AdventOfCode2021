@@ -44,7 +44,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin script.Day4.kts">
+  <component name="RunManager" selected="Kotlin script.Day5.kts">
     <configuration name="Day1.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <option name="filePath" value="$PROJECT_DIR$/Day1.kts" />
@@ -71,8 +71,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Day5.kts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.Day5.kts" />
         <item itemvalue="Kotlin script.Day4.kts" />
         <item itemvalue="Kotlin script.Day3.kts" />
         <item itemvalue="Kotlin script.Day2.kts" />
