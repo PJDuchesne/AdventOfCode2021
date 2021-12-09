@@ -15,7 +15,6 @@ fun main() {
   println("Part Two Answer: ${partTwo()}")
 }
 
-// Purely naive (Does not scale to part 2 size)
 fun partOne(): Int {
   val fishes = File("Day7Input.txt").readLines().single()
     .split(",")
